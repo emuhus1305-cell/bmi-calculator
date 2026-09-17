@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+.result {
+  text-align: center;
+  background: #eff6ff;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 25px 0;
+}
+
+.result p {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.result h2 {
+  font-size: 42px;
+  color: #2563eb;
+}
+
+.save-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #1d4ed8;
+}
+
+.history {
+  margin-top: 30px;
+}
+
+.history h2 {
+  margin-bottom: 15px;
+}
+
+.empty {
+  color: #9ca3af;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.entry p {
+  color: #6b7280;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.delete-button {
+  border: none;
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 9px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #fecaca;
+}
+
+@media (max-width: 500px) {
+  .calculator {
+    padding: 25px 20px;
+  }
+
+  .inputs {
+    grid-template-columns: 1fr;
+  }
+}
